@@ -1,0 +1,60 @@
+# Ignore version control files
+.git
+.gitignore
+
+# Ignore Python cache / compiled files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Ignore virtual environments and local dependencies
+venv
+venv/
+.env
+.envs
+.virtualenv
+.python-version
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore local config files
+*.toml
+!.github/workflows/poetry.lock
+!.github/workflows/pyproject.toml
+
+# Ignore test & coverage artifacts
+htmlcov/
+.coverage
+.tox
+.pytest_cache
+.pytest_cache/
+pytest.json
+nosetests.xml
+coverage.xml
+*.cover
+
+# Ignore documentation builds
+docs/_build/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore user-specific files
+*.log
+*.sqlite3
+*.db
+*.csv
+*.out
+*.tmp
+*.temp
+
+.poetry/
+
+
