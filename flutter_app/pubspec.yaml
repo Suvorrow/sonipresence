@@ -1,0 +1,11 @@
+name: sonipresence
+description : |
+  Client-server application for compact mobile devices, primarily for Android devices. 
+  The main purpose of the application is to record the voice environment by the server side and transfer
+  the audio file with geolocation and time stamp to the client side to ensure the guardian is aware of the safety, 
+  location and environment of the ward.
+publish_to: 'none' # Don't publish to pub.dev
+version: 0.1.0
+
+environment:
+  sdk: ''
