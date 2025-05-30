@@ -13,8 +13,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_riverpod: ^2.4.0
-  go_router: ^6.0.0
+  flutter_riverpod: ^2.6.1
+  flutter_screenutil: ^5.9.3
+  go_router: ^15.1.2
 
 dev_dependencies:
   flutter_test:
