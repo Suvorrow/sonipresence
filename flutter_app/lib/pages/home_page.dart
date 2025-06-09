@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sonipresence/config/config.dart';
+import '../config/app_theme.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -10,11 +10,18 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Sonipresence'),
         centerTitle: true,
+        backgroundColor: context.primary,
       ),
       body: Center(
-        child: Text(
-          'Welcome to Sonipresence',
-          style: AppSizes.fontSizeLarge,
+        child: Padding(
+          padding: EdgeInsets.all(AppSpacing().paddingMedium),
+          child: Text(
+            'Welcome to Sonipresence',
+            style: TextStyle(
+              fontSize: AppTextSizes().headline,
+              color: context.foreground,
+            ),
+          ),
         ),
       ),
     );

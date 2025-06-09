@@ -87,7 +87,7 @@
     },
     {
       "name": "flutter",
-      "rootUri": "file:///home/sooworrow/fvm/versions/stable/packages/flutter",
+      "rootUri": "file:///home/sooworrow/snap/flutter/common/flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "3.7"
     },
@@ -105,13 +105,13 @@
     },
     {
       "name": "flutter_test",
-      "rootUri": "file:///home/sooworrow/fvm/versions/stable/packages/flutter_test",
+      "rootUri": "file:///home/sooworrow/snap/flutter/common/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "3.7"
     },
     {
       "name": "flutter_web_plugins",
-      "rootUri": "file:///home/sooworrow/fvm/versions/stable/packages/flutter_web_plugins",
+      "rootUri": "file:///home/sooworrow/snap/flutter/common/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
       "languageVersion": "3.7"
     },
@@ -267,7 +267,7 @@
     },
     {
       "name": "sky_engine",
-      "rootUri": "file:///home/sooworrow/fvm/versions/stable/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///home/sooworrow/snap/flutter/common/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "3.7"
     },
@@ -400,7 +400,7 @@
   ],
   "generator": "pub",
   "generatorVersion": "3.8.0",
-  "flutterRoot": "file:///home/sooworrow/fvm/versions/stable",
+  "flutterRoot": "file:///home/sooworrow/snap/flutter/common/flutter",
   "flutterVersion": "3.32.0",
   "pubCache": "file:///home/sooworrow/.pub-cache"
 }

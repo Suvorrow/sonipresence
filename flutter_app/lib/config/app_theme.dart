@@ -3,8 +3,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 // Theme Setup: Define Light and Dark Themes
 class AppTheme {
+  //Singleton instance
+  static final AppTheme _instance = AppTheme._inter();
+
+  // Factory constructor to get the singleton instance
+  factory AppTheme() => _instance;
+
+  AppTheme._inter();
   //Light Theme
-  static final light = ThemeData.light().copyWith(
+  static ThemeData get light => ThemeData.light().copyWith(
     colorScheme: const ColorScheme.light().copyWith(
       primary: Colors.blueGrey,
       secondary: Colors.indigoAccent,
@@ -15,7 +22,7 @@ class AppTheme {
   );
 
   // Dark Theme
-  static final dark = ThemeData.dark().copyWith(
+  static ThemeData get dark => ThemeData.dark().copyWith(
     colorScheme: const ColorScheme.dark().copyWith(
       primary: Colors.white60,
       secondary: Colors.deepPurple,
@@ -34,7 +41,29 @@ class AppTheme {
   }
 }
 
+class AppSizes {
+  static final AppSizes _instance = AppSizes._internal();
+
+  factory AppSizes() => _instance;
+
+  AppSizes._internal();
+
+  // Button styles
+  double buttonMinHeight = 60.h;
+  double buttonMaxWidth = 320.w;
+
+  // Icon sizes
+  double iconSizeSmall = 18.w;
+  double iconSizeNormal = 24.w;
+}
+
 class AppTextSizes {
+  static final AppTextSizes _instance = AppTextSizes._internal();
+
+  factory AppTextSizes() => _instance;
+
+  AppTextSizes._internal();
+
   // Headlines
   double get headline => 24.sp;
 
@@ -49,6 +78,11 @@ class AppTextSizes {
 }
 
 class AppSpacing {
+  static final AppSpacing _instance = AppSpacing._internal();
+
+  factory AppSpacing() => _instance;
+
+  AppSpacing._internal();
   // Padding
   double get paddingSmall => 8.w;
   double get paddingMedium => 12.w;
