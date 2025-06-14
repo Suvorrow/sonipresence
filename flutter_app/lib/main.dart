@@ -5,12 +5,9 @@ import 'app/app_widget.dart';
 import '../app/routes.dart';
 
 void main() {
-  runApp(
-    ProviderScope(
-      child: SonipresenceApp(
-        screenUtilConfig: screenUtilConfig,
-        router: router,
-      ),
-    ),
+  final app = SonipresenceApp(
+    screenUtilConfig: screenUtilConfig,
+    router: router,
   );
+  runApp(ProviderScope(child: app));
 }
