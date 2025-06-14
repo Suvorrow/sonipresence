@@ -2,11 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import '../config/app_theme.dart';
-import '../config/screen_util_config.dart';
-import 'routes.dart';
-
-final _router = router;
+import '../config/config.dart';
 
 class SonipresenceApp extends StatelessWidget {
   final ScreenUtilConfig screenUtilConfig;
